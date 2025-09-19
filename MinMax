@@ -1,0 +1,2 @@
+def min_max(x: list[int]) -> list[float]:
+  return [0]*len(x) if max(x) == min(x) else [(xi - min(x)) / (max(x) - min(x)) for xi in x]
